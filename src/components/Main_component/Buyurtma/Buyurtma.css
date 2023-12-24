@@ -1,0 +1,28 @@
+
+.buyurtma {
+    background-color: var(--blue);
+    color: white;
+}
+
+.forma {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    background-color: white;
+}
+
+.forma input,
+.forma select {
+    background-color: var(--light-gray);
+    padding: 16px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.forma input::placeholder {
+    color: #000;
+    font-weight: 400;
+}

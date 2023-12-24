@@ -1,0 +1,121 @@
+.xizmatlar-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 56px;
+    padding-bottom: 56px;
+
+}
+
+.xizmatlar-container .title h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 130%;
+    margin-bottom: 16px;
+}
+
+.xizmatlar-container .title p {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 719px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.xizmatlar {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.xizmat {
+    border-radius: 5px;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.10);
+    height: 260px;
+    overflow: hidden;
+    transition: all 200ms ease-in-out;
+
+}
+
+.xizmat .before {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    max-width: 320px;
+    height: 260px;
+    transition: all 200ms ease-in-out;
+
+}
+
+.xizmat:hover .before {
+    transform: scale(0);
+}
+.xizmat:hover .after{
+    transform: translateY(-260px);
+}
+
+.xizmat .after {
+    background-color: var(--blue);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    max-width: 320px;
+    height: 260px;
+    transition: all 200ms ease-in-out;
+    transition-delay: 200ms;
+
+}
+
+.xizmat h5 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.xizmat p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.xizmatlar-container>div:last-child {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.xizmatlar-container>div:last-child a {
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration-line: underline;
+}
+@media only screen and (max-width:750px) {
+    .xizmat .before{
+        max-width: 100%;
+        width: 100%;
+    }
+    .xizmat .after{
+        max-width: 100%;
+        width: 100%;
+    }
+}
